@@ -2,6 +2,7 @@
 
 A temporary Fabric fix for a vanilla Minecraft bug (versions 26.1.2 / 26.2) that causes
 Ender Pearls in stasis chambers to duplicate or respawn whenever the server restarts.
+Coded by Claude with Sonnet 5, so all credit to Claude :)
 
 ## The Bug
 
