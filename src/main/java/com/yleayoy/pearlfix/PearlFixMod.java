@@ -11,6 +11,6 @@ public class PearlFixMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("[PearlFix] Mod chargé - correctif de duplication des ender pearls en chambre de stase actif.");
+        LOGGER.info("[PearlFix] Mod loaded – Ender pearl duplication fix for stasis chambers active.");
     }
 }
