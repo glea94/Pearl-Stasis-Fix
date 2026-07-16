@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    // Nouveau nom du plugin depuis la 26.1 (avant : "fabric-loom")
+    // New plugin name since version 26.1 (previously: "fabric-loom")
     id 'net.fabricmc.fabric-loom' version '1.17-SNAPSHOT'
 }
 
@@ -11,7 +11,7 @@ base {
     archivesName = project.archives_base_name
 }
 
-// Java 25 requis depuis la 26.1 (au lieu de 21)
+// Java 25 required since version 26.1 (instead of 21)
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
@@ -24,8 +24,8 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    // IMPORTANT : depuis la 26.1, il n'y a plus de ligne "mappings ..." ici.
-    // Minecraft est distribué non-obfusqué, Loom ne remape plus rien.
+    // IMPORTANT: Since version 26.1, there is no longer a "mappings ..." line here. 
+// Minecraft is distributed de-obfuscated; Loom no longer remaps anything.
 
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
