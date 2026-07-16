@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    // IMPORTANT: Since version 26.1, there is no longer a "mappings ..." line here. 
+// IMPORTANT: Since version 26.1, there is no longer a "mappings ..." line here. 
 // Minecraft is distributed de-obfuscated; Loom no longer remaps anything.
 
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
