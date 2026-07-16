@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "pearlfix",
+  "version": "${version}",
+  "name": "Pearl Stasis Fix",
+  "description": "Corrige la duplication des ender pearls en chambre de stase lors d'un redémarrage serveur.",
+  "authors": ["yLeaYoy"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.yleayoy.pearlfix.PearlFixMod"
+    ]
+  },
+  "mixins": [
+    "mixins/pearlfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.2",
+    "java": ">=25"
+  }
+}

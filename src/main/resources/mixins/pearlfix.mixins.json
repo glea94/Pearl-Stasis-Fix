@@ -1,0 +1,11 @@
+{
+  "required": false,
+  "package": "com.yleayoy.pearlfix.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "server": [
+    "ServerPlayerPearlMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
