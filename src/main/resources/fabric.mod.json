@@ -3,7 +3,7 @@
   "id": "pearlfix",
   "version": "${version}",
   "name": "Pearl Stasis Fix",
-  "description": "Corrige la duplication des ender pearls en chambre de stase lors d'un redémarrage serveur.",
+  "description": "Fixes the duplication of Ender Pearls in stasis chambers during a server restart.",
   "authors": ["yLeaYoy"],
   "contact": {},
   "license": "MIT",
