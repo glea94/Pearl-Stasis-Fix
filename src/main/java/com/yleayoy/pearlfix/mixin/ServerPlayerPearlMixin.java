@@ -13,15 +13,15 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * Corrige un bug vanilla connu (voir github.com/PaperMC/Paper/issues/13964) :
- * ServerPlayer.enderPearls (Set<ThrownEnderpearl>) n'est jamais nettoye quand
- * la perle reelle est supprimee du monde, ce qui la fait "ressusciter" a
- * chaque reconnexion/redemarrage du serveur.
- *
- * A chaque tick du joueur, on retire du Set toute perle dont isRemoved() est
- * vrai. Une fois retiree, elle ne sera plus sauvegardee dans les donnees du
- * joueur au prochain arret serveur, et ne pourra donc plus etre recreee.
- */
+* Fixes a known vanilla bug (see github.com/PaperMC/Paper/issues/13964):
+* ServerPlayer.enderPearls (Set<ThrownEnderpearl>) is never cleaned up when
+* the actual pearl is removed from the world, causing it to "resurrect"
+* upon every reconnection or server restart. 
+*
+* On every player tick, any pearl for which isRemoved() is true is removed
+* from the Set. Once removed, it will no longer be saved in the player's
+* data during the next server shutdown, and thus cannot be recreated. 
+*/
 @Mixin(ServerPlayer.class)
 public abstract class ServerPlayerPearlMixin {
 
