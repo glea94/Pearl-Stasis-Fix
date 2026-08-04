@@ -48,3 +48,4 @@ The compiled `.jar` file will be located in `build/libs/`.
 3. No configuration required. ## License
 
 MIT - see [LICENSE](LICENSE).
+Mod [Download on Modrinth](https://modrinth.com/mod/pearl-stasis-fix)
